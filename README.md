@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import toWordf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/number-float32-base-to-word/tags). For example,
+
+```javascript
 import toWordf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@v0.1.0-esm/index.mjs';
 ```
 
@@ -93,7 +98,7 @@ var w = toWordf( f32 ); // => 0 01111111 01010110010001011010001
 
 import float64ToFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import toWordf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@v0.1.0-esm/index.mjs';
+import toWordf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@esm/index.mjs';
 
 var word;
 var f64;
