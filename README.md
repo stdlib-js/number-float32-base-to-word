@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import toWordf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@deno/mod.js';
+import toWordf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@v0.2.2-deno/mod.js';
 ```
 
 #### toWordf( x )
@@ -88,7 +88,7 @@ var w = toWordf( f32 ); // => 0 01111111 01010110010001011010001
 ```javascript
 import float64ToFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@deno/mod.js';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import toWordf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@deno/mod.js';
+import toWordf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@v0.2.2-deno/mod.js';
 
 var word;
 var f64;
