@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import toWordf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/number-float32-base-to-word/tags). For example,
+
+```javascript
 import toWordf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@v0.2.2-deno/mod.js';
 ```
 
@@ -88,7 +93,7 @@ var w = toWordf( f32 ); // => 0 01111111 01010110010001011010001
 ```javascript
 import float64ToFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@deno/mod.js';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import toWordf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@v0.2.2-deno/mod.js';
+import toWordf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@deno/mod.js';
 
 var word;
 var f64;
