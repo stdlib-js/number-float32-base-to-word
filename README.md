@@ -35,14 +35,32 @@ limitations under the License.
 
 > Return an unsigned 32-bit integer corresponding to the [IEEE 754][ieee754] binary representation of a [single-precision floating-point number][ieee754].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/number-float32-base-to-word
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import toWordf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@deno/mod.js';
+var toWordf = require( '@stdlib/number-float32-base-to-word' );
 ```
 
 #### toWordf( x )
@@ -50,7 +68,7 @@ import toWordf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-t
 Returns an unsigned 32-bit `integer` corresponding to the [IEEE 754][ieee754] binary representation of a [single-precision floating-point number][ieee754].
 
 ```javascript
-import float64ToFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@deno/mod.js';
+var float64ToFloat32 = require( '@stdlib/number-float64-base-to-float32' );
 
 var f32 = float64ToFloat32( 1.337 );
 // returns 1.3370000123977661
@@ -86,9 +104,9 @@ var w = toWordf( f32 ); // => 0 01111111 01010110010001011010001
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import float64ToFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@deno/mod.js';
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import toWordf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@deno/mod.js';
+var float64ToFloat32 = require( '@stdlib/number-float64-base-to-float32' );
+var randu = require( '@stdlib/random-base-randu' );
+var toWordf = require( '@stdlib/number-float32-base-to-word' );
 
 var word;
 var f64;
@@ -110,7 +128,113 @@ for ( i = 0; i < 1000; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/number/float32/base/to_word.h"
+```
+
+#### stdlib_base_float32_to_word( x, \*word )
+
+Converts a [single-precision floating-point number][ieee754] to an unsigned 32-bit integer corresponding to the number's [IEEE 754][ieee754] binary representation.
+
+```c
+#include <stdint.h>
+
+uint32_t word;
+stdlib_base_float32_to_word( 3.14f, &word );
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] float` input value.
+-   **word**: `[out] uint32_t*` destination.
+
+```c
+void stdlib_base_float32_to_word( const float x, uint32_t *word );
+```
+
+#### stdlib_base_float32_word_t
+
+An opaque type definition for a union for converting between a [single-precision floating-point number][ieee754] and an unsigned 32-bit integer.
+
+```c
+#include <stdint.h>
+
+stdlib_base_float32_word_t w;
+
+// Assign a single-precision floating-point number:
+w.value = 3.14f;
+
+// Retrieve the word:
+uint32_t word = w.word;
+```
+
+The union has the following members:
+
+-   **value**: `float` [single-precision floating-point number][ieee754].
+-   **word**: `uint32_t` word.
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/number/float32/base/to_word.h"
+#include <stdint.h>
+#include <stdio.h>
+
+int main( void ) {
+    float x[] = { 3.14f, -3.14f, 0.0f, 0.0f/0.0f };
+
+    uint32_t word;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        stdlib_base_float32_to_word( x[ i ], &word );
+        printf( "%f => word: %u\n", x[ i ], word );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -136,7 +260,7 @@ for ( i = 0; i < 1000; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -203,9 +327,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/number/float32/base/from-word]: https://github.com/stdlib-js/number-float32-base-from-word/tree/deno
+[@stdlib/number/float32/base/from-word]: https://github.com/stdlib-js/number-float32-base-from-word
 
-[@stdlib/number/float64/base/to-words]: https://github.com/stdlib-js/number-float64-base-to-words/tree/deno
+[@stdlib/number/float64/base/to-words]: https://github.com/stdlib-js/number-float64-base-to-words
 
 <!-- </related-links> -->
 
