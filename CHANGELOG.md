@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-14)
+## Unreleased (2026-01-26)
 
 <section class="issues">
 
@@ -24,7 +24,10 @@ This release closes the following issue:
 
 <details>
 
--   [`57953ed`](https://github.com/stdlib-js/stdlib/commit/57953ed6de1a9a8a992aa0aa884ac23259073c55) - **chore:** fix JavaScript lint errors (issue #6616) [(#6626)](https://github.com/stdlib-js/stdlib/pull/6626) _(by GURU PRASAD SHARMA, Athan Reines)_
+-   [`765abdf`](https://github.com/stdlib-js/stdlib/commit/765abdffa2d20193f4fe18f7add2061d7700ec1f) - **bench:** refactor to use string interpolation in `number/float32/base` [(#9909)](https://github.com/stdlib-js/stdlib/pull/9909) _(by Lokesh Ranjan)_
+-   [`7483bef`](https://github.com/stdlib-js/stdlib/commit/7483bef13b1d3241347266d25a02957269419825) - **test:** use .strictEqual() instead of .equal() _(by Philipp Burckhardt)_
+-   [`6eee151`](https://github.com/stdlib-js/stdlib/commit/6eee15199727d04e3757e66f38384e97b8a333da) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
+-   [`57953ed`](https://github.com/stdlib-js/stdlib/commit/57953ed6de1a9a8a992aa0aa884ac23259073c55) - **chore:** fix JavaScript lint errors (issue #6616) [(#6626)](https://github.com/stdlib-js/stdlib/pull/6626) _(by Guru Prasad Sharma, Athan Reines)_
 -   [`2777e4b`](https://github.com/stdlib-js/stdlib/commit/2777e4be161869d09406e3b17947d24c64b47af2) - **bench:** resolve lint errors in benchmarks _(by Athan Reines)_
 
 </details>
@@ -37,10 +40,12 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
--   GURU PRASAD SHARMA
+-   Guru Prasad Sharma
+-   Lokesh Ranjan
+-   Philipp Burckhardt
 
 </section>
 
