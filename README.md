@@ -44,7 +44,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-toWordf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@umd/browser.js' )
+toWordf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@v0.2.3-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -56,7 +56,7 @@ var toWordf = require( 'path/to/vendor/umd/number-float32-base-to-word/index.js'
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@v0.2.3-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -115,7 +115,7 @@ var w = toWordf( f32 ); // => 0 01111111 01010110010001011010001
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-word@v0.2.3-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
