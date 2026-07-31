@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-30)
+## Unreleased (2026-07-31)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`430fdea`](https://github.com/stdlib-js/stdlib/commit/430fdea947428af11c0e75dc6f6a0bd3cbd13e88) - **chore:** clean-up [(#13805)](https://github.com/stdlib-js/stdlib/pull/13805) _(by Philipp Burckhardt)_
 -   [`8da7f12`](https://github.com/stdlib-js/stdlib/commit/8da7f12959b84428e227d1d9639f871a5268430a) - **docs:** fix JSDoc type [(#12916)](https://github.com/stdlib-js/stdlib/pull/12916) _(by Philipp Burckhardt)_
 
 </details>
