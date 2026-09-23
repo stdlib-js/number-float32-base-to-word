@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-18)
+## Unreleased (2026-09-23)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`d8a1167`](https://github.com/stdlib-js/stdlib/commit/d8a116756a94bac9aeb0b4b5643fbca221de41f3) - **chore:** rename C source files according to convention [(#15435)](https://github.com/stdlib-js/stdlib/pull/15435) _(by Philipp Burckhardt)_
 -   [`7ae11bc`](https://github.com/stdlib-js/stdlib/commit/7ae11bca9e05607a14425d165dfed57584b880b8) - **chore:** clean-up [(#13834)](https://github.com/stdlib-js/stdlib/pull/13834) _(by Philipp Burckhardt)_
 -   [`430fdea`](https://github.com/stdlib-js/stdlib/commit/430fdea947428af11c0e75dc6f6a0bd3cbd13e88) - **chore:** clean-up [(#13805)](https://github.com/stdlib-js/stdlib/pull/13805) _(by Philipp Burckhardt)_
 -   [`8da7f12`](https://github.com/stdlib-js/stdlib/commit/8da7f12959b84428e227d1d9639f871a5268430a) - **docs:** fix JSDoc type [(#12916)](https://github.com/stdlib-js/stdlib/pull/12916) _(by Philipp Burckhardt)_
